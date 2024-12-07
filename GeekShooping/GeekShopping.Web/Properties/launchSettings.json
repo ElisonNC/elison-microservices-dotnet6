@@ -1,4 +1,12 @@
 {
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:49866",
+      "sslPort": 4430
+    }
+  },
   "profiles": {
     "GeekShopping.Web": {
       "commandName": "Project",
@@ -6,7 +14,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "https://localhost:58834;http://localhost:58835"
+      "applicationUrl": "https://localhost:4430;http://localhost:4431"
     }
   }
 }

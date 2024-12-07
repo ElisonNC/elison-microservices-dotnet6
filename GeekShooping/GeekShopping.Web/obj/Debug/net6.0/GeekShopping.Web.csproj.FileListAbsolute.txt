@@ -356,3 +356,11 @@ C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug
 C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Projetos\elison-microservices-dotnet6\GeekShooping\GeekShopping.Web\bin\Debug\net6.0\System.Security.Permissions.dll
