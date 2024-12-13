@@ -27,6 +27,8 @@
     </PackageReference>
 
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.2" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.1.5" />
 		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.5" />
@@ -42,6 +44,10 @@
 	    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
 	    <CopyToPublishDirectory>Never</CopyToPublishDirectory>
 	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\GeekShopping.MessageBus\GeekShopping.MessageBus.csproj" />
 	</ItemGroup>
 
 </Project>

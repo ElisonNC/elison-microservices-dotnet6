@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YpOHGPUTK6zQN7lECcHPXYgDfwbYzrn4t8ljV1PuINs=",
+  "Hash": "ZEOERlZEJVlicWK8p8hBiv+bnPe5oAR9aobY9wxyoQA=",
   "Source": "GeekShopping.Web",
   "BasePath": "_content/GeekShopping.Web",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\geek_shopping.png"
+    },
+    {
+      "Identity": "C:\\Projetos\\elison-microservices-dotnet6\\GeekShooping\\GeekShopping.Web\\wwwroot\\images\\order.png",
+      "SourceId": "GeekShopping.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projetos\\elison-microservices-dotnet6\\GeekShooping\\GeekShopping.Web\\wwwroot\\",
+      "BasePath": "_content/GeekShopping.Web",
+      "RelativePath": "images/order.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\order.png"
     },
     {
       "Identity": "C:\\Projetos\\elison-microservices-dotnet6\\GeekShooping\\GeekShopping.Web\\wwwroot\\js\\site.js",
