@@ -4,6 +4,7 @@ using RabbitMQ.Client;
 using System;
 using System.Text;
 using System.Text.Json;
+using System.Threading.Channels;
 
 namespace GeekShopping.PaymentAPI.RabbitMQSender
 {
@@ -13,7 +14,9 @@ namespace GeekShopping.PaymentAPI.RabbitMQSender
         private readonly string _password;
         private readonly string _userName;
         private IConnection _connection;
-        private const string ExchangeName = "FanoutPaymentUpdateExchange";
+        private const string ExchangeName = "DirectPaymentUpdateExchange";
+        private const string PaymentEmailUpdateQueueName = "PaymentEmailUpdateQueueName";
+        private const string PaymentOrderUpdateQueueName = "PaymentOrderUpdateQueueName";
 
         public RabbitMQMessageSender()
         {
@@ -27,10 +30,19 @@ namespace GeekShopping.PaymentAPI.RabbitMQSender
             if(ConnectionExists())
             {
                 using var channel = _connection.CreateModel();
-                channel.ExchangeDeclare(ExchangeName, ExchangeType.Fanout, durable: false);
+
+                channel.ExchangeDeclare(ExchangeName, ExchangeType.Direct, durable: false);
+                channel.QueueDeclare(PaymentEmailUpdateQueueName, false, false, false, null);
+                channel.QueueDeclare(PaymentOrderUpdateQueueName, false, false, false, null);
+
+                channel.QueueBind(PaymentEmailUpdateQueueName, ExchangeName, "PaymentEmail");
+                channel.QueueBind(PaymentOrderUpdateQueueName, ExchangeName, "PaymentOrder");
+
                 byte[] body = GetMessageAsByteArray(message);
                 channel.BasicPublish(
-                    exchange: ExchangeName, "", basicProperties: null, body: body);
+                    exchange: ExchangeName, "PaymentEmail", basicProperties: null, body: body);
+                channel.BasicPublish(
+                    exchange: ExchangeName, "PaymentOrder", basicProperties: null, body: body);
             }
         }
 
